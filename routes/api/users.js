@@ -74,7 +74,7 @@ router.post(
         (err, token) => {
           // callback
           if (err) throw err;
-          res.json({ token });
+          res.json({ token, payload });
         }
       );
     } catch (err) {
